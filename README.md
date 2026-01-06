@@ -9,7 +9,9 @@ The source code for TACE can be found here: [TACE GitHub Repository](https://git
 ## Material Models
 
 ### TAVE-v1-OMat24-M
-Download link: [Hugging Face](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-OMat24-M.pt)
+
+[Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-OMat24-M.pt)
+
 - **Model size:** 18.8M parameters, 89M elements 
 - **Training data:** OMat24 dataset (PBE+U)  
 - **Target property:** `[energy, forces, stress]`  
@@ -19,7 +21,9 @@ Download link: [Hugging Face](https://huggingface.co/xvzemin/tace-foundations/re
 
 
 ### TAVE-v1-OAM-M
-Download link: [Hugging Face](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-OAM-M.pt)
+
+[Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-OAM-M.pt)
+
 - **Model size:** 18.8M parameters, 89M elements  
 - **Training data:** Fine-tuned from TAVE-v1-OMat24-M using sAlex + MPtrj (PBE+U)  
 - **Target properties:** `[energy, forces, stress]`  
