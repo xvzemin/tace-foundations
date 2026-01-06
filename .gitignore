@@ -1,0 +1,45 @@
+# Wildcard
+*.txt
+*.log
+*.pt
+*.pth
+*.ckpt
+*.py[cod]
+*$py.class
+*.egg-info/
+*.png
+*.xzm
+*.out
+*.lmdb
+*.traj
+*.h5
+*.zip
+*.gz
+
+# Ignore all dir
+.idea/
+.vscode/
+.pytest_cache/
+.mypy_cache/
+logs/
+wandb/
+results/
+output/
+outputs/
+checkpoints/
+build/
+__pycache__/
+tmp/
+test/
+xzm/
+v2/
+draw/
+
+# Ignore specific files
+.DS_Store
+.ipynb_checkpoints
+
+
+# White list
+!arch.png
+!requirements.txt
