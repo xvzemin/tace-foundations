@@ -78,3 +78,13 @@ We sincerely acknowledge the contributions of all researchers who made the train
       primaryClass={physics.chem-ph},
       url={https://arxiv.org/abs/2512.16882},
 }
+
+@misc{zemin_xu_2026,
+	author       = { Zemin Xu and Wenbo Xie and P. Hu },
+	title        = { tace-foundations (Revision 086d67d) },
+	year         = 2026,
+	url          = { https://huggingface.co/xvzemin/tace-foundations },
+	doi          = { 10.57967/hf/7458 },
+	publisher    = { Hugging Face }
+}
+```
