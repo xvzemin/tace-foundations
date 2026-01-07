@@ -88,3 +88,10 @@ We sincerely acknowledge the contributions of all researchers who made the train
 	publisher    = { Hugging Face }
 }
 ```
+
+## License
+
+Code: MIT License  
+
+Models：CC BY 4.0
+
