@@ -43,7 +43,7 @@ Requirements: tace >= 0.0.8
 
 [Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-LES-REICO-5-PdAgCHO.pt)
 
-Requirements: tace >= 0.0.8, les(git commit 976e196, https://github.com/ChengUCB/les)
+Requirements: tace >= 0.0.8, les(https://github.com/ChengUCB/les/commit/976e19656eef02c2bc0ce184a5567e99bec80fd6)
 
 - **Model size:** 4.7M parameters
 - **Support elements:** [Pd, Ag, C, H, O]
