@@ -35,9 +35,17 @@ The source code for TACE can be found here: [TACE GitHub Repository](https://git
 
 ## Catalysis Models
 
-### TACE-RECIO
-- Coming soon
-- **Highlights:** A wide application system, capable of describing specific reactions without finetuning
+### TACE-v1-LES-REICO-5-PdAgCHO.pt
+
+[Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-LES-REICO-5-PdAgCHO.pt)
+
+- **Model size:** 4.7M parameters
+- **Support elements:** [Pd, Ag, C, H, O]
+- **Training data:** Training using RECIO-PdAgCHO dataset (PBE)  
+- **Target properties:** `[energy, forces, stress]`  
+- **Embedding properties:** `[]`  
+- **Plug-in:** Please install ``LES`` use git commit ``976e196`` in https://github.com/ChengUCB/les
+- **Highlights:** ``Describing almost arbitrary reactions without finetuning`` 
 
 
 ### TACE-AOR
