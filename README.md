@@ -12,6 +12,8 @@ The source code for TACE can be found here: [TACE GitHub Repository](https://git
 
 [Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-OMat24-M.pt)
 
+Requirements: tace >= 0.0.8
+
 - **Model size:** 18.8M parameters, 89M elements 
 - **Training data:** OMat24 dataset (PBE+U)  
 - **Target property:** `[energy, forces, stress]`  
@@ -23,6 +25,8 @@ The source code for TACE can be found here: [TACE GitHub Repository](https://git
 ### TAVE-v1-OAM-M
 
 [Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-OAM-M.pt)
+
+Requirements: tace >= 0.0.8
 
 - **Model size:** 18.8M parameters, 89M elements  
 - **Training data:** Fine-tuned from TAVE-v1-OMat24-M using sAlex + MPtrj (PBE+U)  
@@ -39,12 +43,13 @@ The source code for TACE can be found here: [TACE GitHub Repository](https://git
 
 [Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-LES-REICO-5-PdAgCHO.pt)
 
+Requirements: tace >= 0.0.8, les(git commit 976e196, https://github.com/ChengUCB/les)
+
 - **Model size:** 4.7M parameters
 - **Support elements:** [Pd, Ag, C, H, O]
 - **Training data:** Training using REICO-PdAgCHO dataset (PBE)  
 - **Target properties:** `[energy, forces, stress]`  
 - **Embedding properties:** `[]`  
-- **Plug-in:** Please install ``LES`` use git commit ``976e196`` in https://github.com/ChengUCB/les
 - **Highlights:** ``Describing almost arbitrary reactions without finetuning`` 
 
 
