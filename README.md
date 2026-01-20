@@ -12,7 +12,7 @@ The source code for TACE can be found here: [TACE GitHub Repository](https://git
 
 [Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-OMat24-M.pt)
 
-Requirements: tace >= 0.0.8
+Requirements: tace >= 0.0.9
 
 - **Model size:** 18.8M parameters, 89M elements 
 - **Training data:** OMat24 dataset (PBE+U)  
@@ -26,7 +26,7 @@ Requirements: tace >= 0.0.8
 
 [Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-OAM-M.pt)
 
-Requirements: tace >= 0.0.8
+Requirements: tace >= 0.0.9
 
 - **Model size:** 18.8M parameters, 89M elements  
 - **Training data:** Fine-tuned from TAVE-v1-OMat24-M using sAlex + MPtrj (PBE+U)  
@@ -43,7 +43,7 @@ Requirements: tace >= 0.0.8
 
 [Download](https://huggingface.co/xvzemin/tace-foundations/resolve/main/TACE-v1-LES-REICO-5-PdAgCHO.pt)
 
-Requirements: tace >= 0.0.8, les(https://github.com/ChengUCB/les/commit/976e19656eef02c2bc0ce184a5567e99bec80fd6)
+Requirements: tace >= 0.0.9, [les][https://github.com/ChengUCB/les/commit/976e19656eef02c2bc0ce184a5567e99bec80fd6]
 
 - **Model size:** 4.7M parameters
 - **Support elements:** [Pd, Ag, C, H, O]
