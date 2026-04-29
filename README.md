@@ -1,10 +1,9 @@
 <!-- # TACE Foundational Models -->
 
 # WARNING
-If you downloaded `tace` before 2026-04-30 and are using `TACE-OAM-L` or `TACE-OMAT24-L`, 
-you should reinstall `tace`, as we discovered and fixed a bug. This issue does not 
-affect models trained from scratch.
-
+If you install `tace` before 2026-04-30 and are using `TACE-OAM-L` or `TACE-OMAT24-L`, 
+you should reinstall `tace`, as we discovered and fixed a bug. The model files do not need 
+to be downloaded again; simply reinstall TACE. This does not affect models trained from scratch.
 ---
 
 This repository provides foundational atomistic machine learning models based on **Tensor Atomic Cluster Expansion (TACE)**. These models are primarily developed for **potential energy surfaces** in **materials and reaction systems**, including multi-phase catalysis and organic reactions. Future work may extend the framework to additional types of foundational models.
