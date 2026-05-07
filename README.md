@@ -15,7 +15,7 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 # Available models
 | Name                        | Level of theory | Available sizes     | To be used for                      | Training set          |
 |-----------------------------|-----------------|---------------------|-------------------------------------|-----------------------|
-| TACE-OMAT24                 | PBE+U           | M, L                | materials (89 elements)             | OMat24                |
+| TACE-OMAT24                 | PBE+U           | L                   | materials (89 elements)             | OMat24                |
 | TACE-OAM                    | PBE+U           | L                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 
 ---
@@ -26,7 +26,7 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 | TACE-v1-OMAT24              | PBE+U           | M                   | materials (89 elements)             | OMat24                |
 | TACE-v1-OAM                 | PBE+U           | M                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 | TACE-v1-LES-REICO-5-PdAgCHO | PBE             | M                   | heterogeneous catalysis (5 elements)| REICO-5-PdAgCHO       |
-
+| TACE-OMAT24                 | PBE+U           | M                   | materials (89 elements)             | OMat24                |
 ---
 
 ## Finetuning Strategy
