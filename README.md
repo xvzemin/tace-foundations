@@ -1,11 +1,5 @@
 <!-- # TACE Foundational Models -->
 
-# WARNING
-If you install `tace` before 2026-04-30 and are using `TACE-OAM-L` or `TACE-OMAT24-L`, 
-you should reinstall `tace`, as we discovered and fixed a bug. The model files do not need 
-to be downloaded again; simply reinstall TACE. This does not affect models trained from scratch.
----
-
 This repository provides foundational atomistic machine learning models based on **Tensor Atomic Cluster Expansion (TACE)**. These models are primarily developed for **potential energy surfaces** in **materials and reaction systems**, including multi-phase catalysis and organic reactions. Future work may extend the framework to additional types of foundational models.
 
 The source code for TACE can be found here: [TACE GitHub Repository](https://github.com/xvzemin/tace).
@@ -15,6 +9,7 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 # Available models
 | Name                        | Level of theory | Available sizes     | To be used for                      | Training set          |
 |-----------------------------|-----------------|---------------------|-------------------------------------|-----------------------|
+| TACE-OAM-RRA-Preview        | PBE+U           | XL                  | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 | TACE-OMAT24                 | PBE+U           | L                   | materials (89 elements)             | OMat24                |
 | TACE-OAM                    | PBE+U           | L                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 
@@ -31,7 +26,7 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 
 ## Finetuning Strategy
 
-We currently support **LoRA** and **parameter-freezing** finetuning methods. (LoRA need tace = 0.1.0)
+We currently support **LoRA** and **parameter-freezing** finetuning methods.
 
 For more details, please refer to the TACE documentation: [TACE Docs](https://tace.readthedocs.io/en/latest/index.html)
 
@@ -44,20 +39,17 @@ We sincerely acknowledge the contributions of all researchers who made the train
 Specific dataset citations for each model will be provided in future updates.
 
 ```bibtex
-@misc{xu2026spectralspatialtensoratomiccluster,
-      title={Spectral/Spatial Tensor Atomic Cluster Expansion with Universal Embeddings in Cartesian Space},
-      author={Zemin Xu and Wenbo Xie and P. Hu},
-      year={2026},
-      eprint={2509.14961},
-      archivePrefix={arXiv},
-      primaryClass={stat.ML},
-      url={https://arxiv.org/abs/2509.14961},
+@article{xu2025tace,
+  title={TACE: A unified Irreducible Cartesian Tensor Framework for Atomistic Machine Learning},
+  author={Xu, Zemin and Xie, Wenbo and Xie, Daiqian and Hu, P},
+  journal={arXiv preprint arXiv:2509.14961},
+  year={2025}
 }
 
-@misc{xu2025cartesiannjextendinge3nnirreducible,
-      title={Cartesian-nj: Extending e3nn to Irreducible Cartesian Tensor Product and Contracion},
-      author={Zemin Xu and Chenyu Wu and Wenbo Xie and Daiqian Xie and P. Hu},
-      year={2025},
+@misc{xu2026cartesian3jframeworkmachinelearning,
+      title={A Cartesian-3j Framework for Machine Learning Interatomic Potentials},
+      author={Zemin Xu and Chenyu Wu and Wenbo Xie and P. Hu},
+      year={2026},
       eprint={2512.16882},
       archivePrefix={arXiv},
       primaryClass={physics.chem-ph},
