@@ -43,3 +43,4 @@ draw/
 # White list
 !arch.png
 !requirements.txt
+!fig/matbench_tece_rra.png

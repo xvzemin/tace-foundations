@@ -1,12 +1,17 @@
 <!-- # TACE Foundational Models -->
 
+![Default Ranking on Matbench Discovery as of July 8, 2026](images/matbench_tece_rra.png)
+
 # Note
-The OMat24 series of RRA and ECE models will be released soon, and smaller models will also be added.
-TECE-OAM-RRA-1.0 is not the final version of OAM. As the author will be attending ICML 2026 in the coming days, 
-TACE v0.2.0 will not be officially updated for the next few days. 
-However, the current models are already available for use.
+The small models will be released soon.
+TECE-OAM-RRA-1.0 is not the final version of OAM. 
 
 # Available models
+
+You should use TACE's acceleration methods to benchmark all TACE models:
+
+[TACE Acceleration Guide](https://tace.readthedocs.io/en/latest/guide/acceleration.html)
+
 The source code for TACE can be found here: [TACE GitHub Repository](https://github.com/xvzemin/tace).
 
 All model can be found here: [TACE HuggingFace Repository](https://huggingface.co/xvzemin/tace-foundations/tree/main).
@@ -14,7 +19,9 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 | Name                        | Level of theory | Available sizes     | To be used for                      | Training set          |
 |-----------------------------|-----------------|---------------------|-------------------------------------|-----------------------|
 | TECE-OAM-RRA-1.0            | PBE+U           | XL                  | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
+| TECE-OMat24-RRA             | PBE+U           | XL                  | materials (89 elements)             | OMat24                |
 | TACE-OAM-RRA-Preview        | PBE+U           | XL                  | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
+| TACE-OMat24-RRA             | PBE+U           | XL                  | materials (89 elements)             | OMat24                |
 | TACE-OMAT24                 | PBE+U           | L                   | materials (89 elements)             | OMat24                |
 | TACE-OAM                    | PBE+U           | L                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 
@@ -26,7 +33,6 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 | TACE-v1-OMAT24              | PBE+U           | M                   | materials (89 elements)             | OMat24                |
 | TACE-v1-OAM                 | PBE+U           | M                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 | TACE-v1-LES-REICO-5-PdAgCHO | PBE             | M                   | heterogeneous catalysis (5 elements)| REICO-5-PdAgCHO       |
-| TACE-OMAT24                 | PBE+U           | M                   | materials (89 elements)             | OMat24                |
 ---
 
 ## Finetuning Strategy
