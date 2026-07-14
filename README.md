@@ -46,18 +46,33 @@ For more details, please refer to the TACE documentation: [TACE Docs](https://ta
 
 ## Citing TACE
 
-If you use TACE code or foundational models in your work, please cite the following references.  
-We sincerely acknowledge the contributions of all researchers who made the training datasets publicly available. 
-Specific dataset citations for each model will be provided in future updates.
+If you use TACE, please cite our papers:
 
 ```bibtex
-@article{xu2025tace,
-  title={TACE: A unified Irreducible Cartesian Tensor Framework for Atomistic Machine Learning},
-  author={Xu, Zemin and Xie, Wenbo and Xie, Daiqian and Hu, P},
-  journal={arXiv preprint arXiv:2509.14961},
-  year={2025}
+@misc{xu2026spectralspatialtensoratomiccluster,
+      title={Spectral/Spatial Tensor Atomic Cluster Expansion with Universal Embeddings in Cartesian Space},
+      author={Zemin Xu and Wenbo Xie and P. Hu},
+      year={2026},
+      eprint={2509.14961},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      url={https://arxiv.org/abs/2509.14961},
 }
 
+@misc{xu2026edgeclusterexpansionradial,
+      title={Edge Cluster Expansion with Radial Rotary Attention for Interatomic Potentials},
+      author={Zemin Xu and Wenbo Xie and P. Hu},
+      year={2026},
+      eprint={2607.10664},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      url={https://arxiv.org/abs/2607.10664},
+}
+```
+
+If you use cartnn, Cartesian-3j, cMACE, cNequIP, cAllegro, please cite our papers:
+
+```bibtex
 @misc{xu2026cartesian3jframeworkmachinelearning,
       title={A Cartesian-3j Framework for Machine Learning Interatomic Potentials},
       author={Zemin Xu and Chenyu Wu and Wenbo Xie and P. Hu},
