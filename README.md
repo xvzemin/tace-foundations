@@ -1,6 +1,6 @@
 <!-- # TACE Foundational Models -->
 
-![Default Ranking on Matbench Discovery as of July 8, 2026](images/matbench_tece_rra.png)
+![Default Ranking on Matbench Discovery as of July 8, 2026](fig/matbench_tece_rra.png)
 
 # Note
 The small models will be released soon.
