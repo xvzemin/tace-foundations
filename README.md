@@ -17,7 +17,8 @@
   * `TACE-OMat24-7M`
   * `TACE-OAM-7M`
 
-  These models provide a better balance between accuracy, inference speed, and GPU memory consumption.
+  These models provide a better balance between accuracy, inference speed, and GPU memory consumption. 
+  In particular, `TACE-OAM-7M` achieves essentially the same accuracy as `TACE-OAM-L`, with both models obtaining a CPS score of approximately `0.889`.
 
 * **About `TACE-OAM-L`**
   `TACE-OAM-L` remains usable, but it is based on an earlier, less effective architecture developed during the model exploration stage. In addition, it was trained using only approximately 20% of the available `OMat24`, `sAlex`, and `MPtrj` datasets. Therefore, it is not recommended as the default choice for new projects or production simulations.
