@@ -22,7 +22,7 @@
 * **About `TACE-OAM-L`**
   `TACE-OAM-L` remains usable, but it is based on an earlier, less effective architecture developed during the model exploration stage. In addition, it was trained using only approximately 20% of the available `OMat24`, `sAlex`, and `MPtrj` datasets. Therefore, it is not recommended as the default choice for new projects or production simulations.
 
-# Acceleration (OpenEquivariance / CuEquivariance / AOTI)
+# Acceleration (OpenEquivariance / cuEquivariance / AOTI)
 
 When using or benchmarking any TACE model, make sure to enable the appropriate TACE acceleration method. Acceleration can deliver at least a **5× improvement in runtime performance and GPU memory efficiency** compared with the unaccelerated configuration.
 
