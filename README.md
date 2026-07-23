@@ -37,7 +37,7 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 | Name                        | Level of theory | Available sizes     | To be used for                      | Training set          |
 |-----------------------------|-----------------|---------------------|-------------------------------------|-----------------------|
 | TACE-OMat24-7M              | PBE+U           | M                   | materials (89 elements)             | OMat24                |
-| TACE-OAN-7M                 | PBE+U           | M                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
+| TACE-OAM-7M                 | PBE+U           | M                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 | TECE-OMat24-RRA-1.0         | PBE+U           | XL                  | materials (89 elements)             | OMat24                |
 | TECE-OAM-RRA-1.0            | PBE+U           | XL                  | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 | TACE-OMat24-RRA-1.0         | PBE+U           | XL                  | materials (89 elements)             | OMat24                |
@@ -55,7 +55,7 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 | TACE-v1-LES-REICO-5-PdAgCHO | PBE             | M                   | heterogeneous catalysis (5 elements)| REICO-5-PdAgCHO       |
 ---
 
-## Finetuning Strategy
+# Finetuning Strategy
 
 We currently support **LoRA** and **parameter-freezing** finetuning methods.
 
@@ -63,43 +63,42 @@ For more details, please refer to the TACE documentation: [TACE Docs](https://ta
 
 ---
 
-## Citing TACE
+# Citing TACE
 
 If you use TACE, please cite our papers:
 
 ```bibtex
 @misc{xu2026spectralspatialtensoratomiccluster,
-      title={Spectral/Spatial Tensor Atomic Cluster Expansion with Universal Embeddings in Cartesian Space},
-      author={Zemin Xu and Wenbo Xie and P. Hu},
-      year={2026},
-      eprint={2509.14961},
-      archivePrefix={arXiv},
-      primaryClass={stat.ML},
-      url={https://arxiv.org/abs/2509.14961},
+  title={Spectral/Spatial Tensor Atomic Cluster Expansion with Universal Embeddings in Cartesian Space},
+  author={Zemin Xu and Wenbo Xie and P. Hu},
+  year={2026},
+  eprint={2509.14961},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML},
+    url={https://arxiv.org/abs/2509.14961},
 }
 
 @misc{xu2026edgeclusterexpansionradial,
-      title={Edge Cluster Expansion with Radial Rotary Attention for Interatomic Potentials},
-      author={Zemin Xu and Wenbo Xie and P. Hu},
-      year={2026},
-      eprint={2607.10664},
-      archivePrefix={arXiv},
-      primaryClass={stat.ML},
-      url={https://arxiv.org/abs/2607.10664},
+  title={Edge Cluster Expansion with Radial Rotary Attention for Interatomic Potentials},
+  author={Zemin Xu and Wenbo Xie and P. Hu},
+  year={2026},
+  eprint={2607.10664},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML},
+  url={https://arxiv.org/abs/2607.10664},
 }
 ```
 
 If you use cartnn, Cartesian-3j, cMACE, cNequIP, cAllegro, please cite our papers:
 
 ```bibtex
-@misc{xu2026cartesian3jframeworkmachinelearning,
-      title={A Cartesian-3j Framework for Machine Learning Interatomic Potentials},
-      author={Zemin Xu and Chenyu Wu and Wenbo Xie and P. Hu},
-      year={2026},
-      eprint={2512.16882},
-      archivePrefix={arXiv},
-      primaryClass={physics.chem-ph},
-      url={https://arxiv.org/abs/2512.16882},
+@inproceedings{
+  xu2026a,
+  title={A Cartesian-3j Framework for Machine Learning Interatomic Potentials},
+  author={Zemin Xu and Chenyu Wu and Wenbo Xie and Peijun Hu},
+  booktitle={Forty-third International Conference on Machine Learning},
+  year={2026},
+  url={https://openreview.net/forum?id=9ZWK6gneWq}
 }
 ```
 
