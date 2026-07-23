@@ -3,15 +3,32 @@
 # Default Ranking on Matbench as of July 8, 2026
 ![Default Ranking on Matbench as of July 8, 2026](fig/matbench_tece_rra.png)
 
-# Note
-The small models will be released soon.
-TECE-OAM-RRA-1.0 is not the final version of OAM. 
+# Model Selection Guide
+
+* **Highest accuracy**
+  If accuracy is your top priority, we recommend:
+
+  * `TECE-OMat24-RRA-1.0`
+  * `TECE-OAM-RRA-1.0`
+
+* **Balanced accuracy, speed, and memory usage**
+  For production simulations, we recommend:
+
+  * `TACE-OMat24-7M`
+  * `TACE-OAM-7M`
+
+  These models provide a better balance between accuracy, inference speed, and GPU memory consumption.
+
+* **About `TACE-OAM-L`**
+  `TACE-OAM-L` remains usable, but it is based on an earlier, less effective architecture developed during the model exploration stage. In addition, it was trained using only approximately 20% of the available `OMat24`, `sAlex`, and `MPtrj` datasets. Therefore, it is not recommended as the default choice for new projects or production simulations.
+
+# Acceleration (OpenEquivariance / CuEquivariance / AOTI)
+
+When using or benchmarking any TACE model, make sure to enable the appropriate TACE acceleration method. Acceleration can deliver at least a **5× improvement in runtime performance and GPU memory efficiency** compared with the unaccelerated configuration.
+
+See the [TACE Acceleration Guide](https://tace.readthedocs.io/en/latest/guide/acceleration.html) for setup instructions and supported backends.
 
 # Available models
-
-You should use TACE's acceleration methods to benchmark all TACE models:
-
-[TACE Acceleration Guide](https://tace.readthedocs.io/en/latest/guide/acceleration.html)
 
 The source code for TACE can be found here: [TACE GitHub Repository](https://github.com/xvzemin/tace).
 
@@ -19,12 +36,14 @@ All model can be found here: [TACE HuggingFace Repository](https://huggingface.c
 
 | Name                        | Level of theory | Available sizes     | To be used for                      | Training set          |
 |-----------------------------|-----------------|---------------------|-------------------------------------|-----------------------|
+| TACE-OMat24-7M              | PBE+U           | M                   | materials (89 elements)             | OMat24                |
+| TACE-OAN-7M                 | PBE+U           | M                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
+| TECE-OMat24-RRA-1.0         | PBE+U           | XL                  | materials (89 elements)             | OMat24                |
 | TECE-OAM-RRA-1.0            | PBE+U           | XL                  | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
-| TECE-OMat24-RRA             | PBE+U           | XL                  | materials (89 elements)             | OMat24                |
+| TACE-OMat24-RRA-1.0         | PBE+U           | XL                  | materials (89 elements)             | OMat24                |
 | TACE-OAM-RRA-Preview        | PBE+U           | XL                  | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
-| TACE-OMat24-RRA             | PBE+U           | XL                  | materials (89 elements)             | OMat24                |
-| TACE-OMAT24                 | PBE+U           | L                   | materials (89 elements)             | OMat24                |
-| TACE-OAM                    | PBE+U           | L                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
+| TACE-OMat24-L               | PBE+U           | L                   | materials (89 elements)             | OMat24                |
+| TACE-OAM-L                  | PBE+U           | L                   | materials (89 elements)             | OMat24 → sAlex+MPtrj  |
 
 ---
 
